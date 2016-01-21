@@ -1,4 +1,4 @@
-img = imread("lion.jpg");
+img = imread(\"lion.jpg\");
 k = min(rows(img), columns(img)) / 30;
 [U, S, V] = svd(img);
 UL = single(U(:, 1:k));
